@@ -9,8 +9,8 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               glehmann.net
-tagline:             'geekerie, logiciel libre et vilain gauchisme'
+title:               Gaëtan Lehmann
+tagline:             'Geekerie, logiciel libre et vilain gauchisme'
 # description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://glehmann.github.io
 baseurl:             /
