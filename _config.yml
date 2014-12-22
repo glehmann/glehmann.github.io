@@ -31,5 +31,6 @@ defaults:
       type: posts
     values:
       layout: page
+      comments: true
 
 # Custom vars
