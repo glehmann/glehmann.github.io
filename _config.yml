@@ -23,4 +23,13 @@ author:
   email:          gaetan.lehmann@gmail.com
   email_md5:      a5fe9fd140b01eeaaaf78607686fdcf1
 
+# defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: posts
+    values:
+      layout: page
+
 # Custom vars
