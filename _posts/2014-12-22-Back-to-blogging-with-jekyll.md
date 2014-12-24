@@ -33,7 +33,7 @@ A few steps that may be useful for others:
 * [add a tags page](https://github.com/glehmann/glehmann.github.io/commit/0fa4566)
 * [slightly reduce the font size](https://github.com/glehmann/glehmann.github.io/commit/fdba01e)
 
-Next step, get back my old posts from [nanoblogger].
+Next step, [get back my old posts from nanoblogger]({% post_url 2014-12-24-Converting-nanoblogger-posts-to-jekyll %}).
 
 [nanoblogger]: http://nanoblogger.sourceforge.net/
 [Jekyll]: http://jekyllrb.com/
