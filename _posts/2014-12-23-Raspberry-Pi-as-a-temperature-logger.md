@@ -40,7 +40,7 @@ I already had:
 Total cost: less than 40€.
 
 The system, a [Raspbian] Wheezy 2014-09-09, has been installed without any problem
-— I even been able to configure it with the [bépo] during the setup. Great.
+— I even been able to configure it with the [bépo] keyboard layout during the setup. Great.
 
 Here is how it looks:
 
@@ -201,3 +201,4 @@ informations.
 [XBMC]: http://kodi.tv/
 [DS18B20]: https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing?view=all
 [Raspbian]: http://www.raspbian.org/
+[bépo]: http://bepo.fr
