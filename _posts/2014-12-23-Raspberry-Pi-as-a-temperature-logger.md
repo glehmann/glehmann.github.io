@@ -102,7 +102,7 @@ Here are a few lines from the generated `temp.csv` file:
 There is a single sensor for now – I'm still waiting for the waterproof sensor. And
 here is a chart with the data on a few hours:
 
-![Temperatures](images/RPi-temperatures.png)
+![Temperatures]({{ site.url }}/images/RPi-temperatures.png)
 
 The data was manipulated with R:
 
@@ -143,7 +143,7 @@ installed by default on my raspbian. It failed with the error:
 I had to run `setmode(BCM)` instead of `setmode(BOARD)` to
 avoid that problem, and use the GPIO number instead of the pin number:
 
-[![Raspberry Pi A+/B+ GPIO](images/GPIO-200px.png)](http://www.element14.com/community/servlet/JiveServlet/previewBody/68203-102-6-294412/GPIO.png)
+[![Raspberry Pi A+/B+ GPIO]({{ site.url }}/images/GPIO-200px.png)](http://www.element14.com/community/servlet/JiveServlet/previewBody/68203-102-6-294412/GPIO.png)
 
 The switch, once pushed, connects the GPIO21 to the ground, so the GPIO21
 has to be configured with a pull up resistor. When reading the value with
