@@ -48,7 +48,7 @@ Here is how it looks:
 [![open](https://farm8.staticflickr.com/7520/15465912444_9048f667aa_n.jpg)](https://flic.kr/p/pyEQWQ)
 [![open](https://farm8.staticflickr.com/7472/15902126539_3f640b6350_n.jpg)](https://flic.kr/p/qedycv)
 
-Note a peace of art, but it should do the job!
+Not a peace of art, but it should do the job!
 
 ## Temperature sensors
 
