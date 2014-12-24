@@ -15,7 +15,7 @@ The house has power but no internet access. Ideally, it would be able to log the
 temperature inside and outside the house. I've looked for a ready to use tool
 that could do the job at a low cost, but haven't found anything really convincing.
 
-This is the kind of task the Raspberry Pi can do this task very easily,
+This is the kind of task the Raspberry Pi can do very easily,
 with the help of a [DS18B20] sensor.
 
 ## Raspberry Pi A+
