@@ -167,33 +167,51 @@ The `&` is mandatory to let the process run in the background.
 
 ## Lack of clock battery and network
 
-… and keyboard, or any other input/output device.
+I already knew the Raspberry A+ has no network interface. This is fine for this
+application, because the house has no internet connection.
 
-The main problem I have is the lack of clock on the Raspberry Pi. Without any
-network access, the only way to set the date is to run something like
+This is not convenient for the setup though, where everything must be done
+with the screen and the keyboard, or transfered to the SD card before booting
+the Raspberry Pi.
+
+Another problem I overlooked is the lack of battery for the clock. This mean
+the Raspberry Pi can't keep its clock running when it is not powered. The [Raspbian]
+deals with that by keeping the date unchanged since the last time it went down.
+With the network, the date and time are updated with NTP. Without network,
+the only way to update the date is to use a command like:
 
     sudo date -s "december 21 2014 17:29"
 
-To install the temperature logger, I'll have to drive several hours, and the
-Raspberry Pi will be unplugged during that time. I'll have no screen or keyboard
-in the house, and won't be able to connect to the Rasberry Pi with my computer
-or my phone to set the date.
+Obviously, the only (easy) way to run that is with a screen and a keyboard,
+and I won't have any when I'll plug the Raspberry Pi in that house.
 
-With [Raspbian], the date is preserved from the last shutdown, so I guess I'll
-just have to set the approximate date at which it will boot before unplugging
+Again, a network interface would have helped, as I could have used my laptop
+to set the date through SSH.
+
+I could buy a USB WIFI adapter, but the total cost would then be quite close
+to the price of the Raspberry B+, and WIFI is a lot more painful to configure
+than a simple ethernet connection.
+
+I guess I'll just have to set the approximate date at which it will boot before unplugging
 it.
 
-I've also added a cron job that run the command
+A power failure will also shift the time recorded with the temperature. I'm not
+sure how important it can be, but to be sure to know when a power failure
+occur, I've added a command that renames the temperature file when the
+Raspberry reboots:
 
     mv temp.csv temp.csv.`date +%Y-%m-%dT%H.%M.%S`
 
-at boot time (with the special string `@reboot`) to make sure to know when the
-computer has rebooted.
+This is run by cron with the special string `@reboot`.
+
+So a Raspberry A+ is fine for the application itself, but the network interface
+would have helped quite a lot to configure everything and experiment with the
+temperature logging. I think I'll buy a B+ for my next project!
 
 That's it!
 
 Now I wait for the weatherproof sensor to arrive. In the mean time, I let the logger
-accumulate some real temperatures that I'll can use to try extract some interesting
+accumulate some real temperatures that I can use to try to extract some interesting
 informations.
 
 
