@@ -104,7 +104,7 @@ here is a chart with the data on a few hours:
 
 ![Temperatures]({{ site.url }}/images/RPi-temperatures.png)
 
-The data was manipulated with R:
+The data is in CSV format, so it can be easily imported everywhere. I've used [R]:
 
 ~~~R
 data <- read.table("temp.csv", sep=";", col.names=c("date", "sensor", "temperature"))
@@ -221,3 +221,4 @@ informations.
 [DS18B20]: https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing?view=all
 [Raspbian]: http://www.raspbian.org/
 [bépo]: http://bepo.fr
+[R]: http://www.r-project.org/
