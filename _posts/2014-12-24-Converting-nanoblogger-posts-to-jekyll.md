@@ -2,7 +2,7 @@
 title: Converting nanoblogger posts to jekyll
 ---
 
-So my old posts were done with [nanoblogger], and I'm now using [jekyll].
+So [my old posts were done with nanoblogger, and I'm now using jekyll]({% post_url 2014-12-22-Back-to-blogging-with-jekyll %}).
 Fortunately, both are using a quite similar format, so importing my old posts
 should be not too difficult.
 

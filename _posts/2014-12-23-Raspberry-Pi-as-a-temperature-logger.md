@@ -22,7 +22,7 @@ with the help of a [DS18B20] sensor.
 
 So I bought:
 
-* a Raspberry Pi A+ — I don't need any USB port or ethernet connection,
+* a [Raspberry Pi A+] — I don't need any USB port or ethernet connection,
 256MB of RAM is more than enough, and the very low power consumption is
 always nice to have,
 * two [DS18B20] sensors — one is waterproof with a cable and the other is not,
@@ -216,6 +216,7 @@ informations.
 
 
 [Raspberry Pi]: http://www.raspberrypi.org/products/
+[Raspberry Pi A+]: http://www.raspberrypi.org/products/model-a-plus/
 [XBMC]: http://kodi.tv/
 [DS18B20]: https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing?view=all
 [Raspbian]: http://www.raspbian.org/
