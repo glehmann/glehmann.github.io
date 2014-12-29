@@ -185,7 +185,8 @@ Using it in python requires a bit more work on Mac OS X.
 After the `import clang.cindex`, the path of libclang should be configured. Either:
 
 ~~~python
-clang.cindex.Config.set_library_path("/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib")
+clang.cindex.Config.set_library_path(
+  "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib")
 ~~~
 
 with XCode, or
@@ -223,7 +224,7 @@ in the AST can be done this way:
 
 import clang.cindex, asciitree, sys
 
-clang.cindex.Config.set_library_path("/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib")
+clang.cindex.Config.set_library_path("/Library/Developer/CommandLineTools/usr/lib")
 index = clang.cindex.Index(clang.cindex.conf.lib.clang_createIndex(False, True))
 translation_unit = index.parse(sys.argv[1], ['-x', 'c++'])
 

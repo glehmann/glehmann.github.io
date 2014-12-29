@@ -31,7 +31,9 @@ A few steps that may be useful for others:
 * [side bar overlay](https://github.com/glehmann/glehmann.github.io/commit/8d6b2cd)
 * [add a sitemap](https://github.com/glehmann/glehmann.github.io/commit/6e824cb)
 * [add a tags page](https://github.com/glehmann/glehmann.github.io/commit/0fa4566)
-* [slightly reduce the font size](https://github.com/glehmann/glehmann.github.io/commit/fdba01e)
+* [slightly reduce the font size](https://github.com/glehmann/glehmann.github.io/commit/c3ddccb)
+* [enlarge the text zone](https://github.com/glehmann/glehmann.github.io/commit/acb27a9)
+* [don't break the lines in the code blocks and use a slider when needed](https://github.com/glehmann/glehmann.github.io/commit/85a941d)
 
 Next step, [get back my old posts from nanoblogger]({% post_url 2014-12-24-Converting-nanoblogger-posts-to-jekyll %}).
 
