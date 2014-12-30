@@ -45,7 +45,7 @@ Pour utiliser tous les serveurs
 disponibles dans cette ville, on ajoute des commandes `remote` correspondant
 à chaque serveur et la commande `remote-random` qui permet de choisir un des
 serveur au hasard. De cette façon, OpenVPN essaiera différents serveurs en cas
-de problème de connexion. Pour Francfort, on obtient:
+de problème de connexion. Pour Francfort, on obtient :
 
 ~~~
 remote-random
@@ -63,14 +63,14 @@ remote 212.83.59.130 53
 
 Pour que l'authentification se fasse sans demander de mot de passe, on ajoute
 un fichier `/etc/openvpn/hmauser.pass` contenant le login et le mot de passe
-séparé par un retour à la ligne:
+séparé par un retour à la ligne :
 
 ~~~~
 monLogin
 monMotDePasse
 ~~~~
 
-Il vaut mieux s'assurer que le fichier n'est accessible que par l'utilisateur `root`:
+Il vaut mieux s'assurer que le fichier n'est accessible que par l'utilisateur `root` :
 
 ~~~bash
 chown root /etc/openvpn/hmauser.pass
@@ -99,9 +99,9 @@ puisque la connexion semble venir d'Allemagne.
 ## Accéder à FranceTV pluzz
 
 Pour accéder à FranceTV pluzz, on force certaines adresses IP à ne pas passer
-par le VPN. Pour ça on crée deux nouveaux fichiers:
+par le VPN. Pour ça on crée deux nouveaux fichiers :
 
-* `/etc/openvpn/hma-up.sh`:
+* `/etc/openvpn/hma-up.sh` :
 
 ~~~bash
 #!/bin/bash
@@ -111,7 +111,7 @@ for ip in 77.67.21.223 77.67.11.114 5.178.43.9 ; do
 done
 ~~~
 
-* `/etc/openvpn/hma-down.sh`:
+* `/etc/openvpn/hma-down.sh` :
 
 ~~~bash
 #!/bin/bash
@@ -121,13 +121,13 @@ for ip in 77.67.21.223 77.67.11.114 5.178.43.9 ; do
 done
 ~~~
 
-Il faut s'assurer que ces fichiers sont exécutables :
+Il faut s'assurer que ces fichiers sont exécutables :
 
 ~~~bash
 chmod a+x /etc/openvpn/hma-*.sh
 ~~~
 
-Enfin on ajoute ces lignes au fichier `/etc/openvpn/hma.conf`:
+Enfin on ajoute ces lignes au fichier `/etc/openvpn/hma.conf` :
 
 ~~~
 script-security 2
@@ -136,7 +136,7 @@ down /etc/openvpn/transmission-down.sh
 ~~~
 
 enfin on ajoute ces lignes à `/etc/hosts`, pour forcer la résolution des noms
-utilisée par FranceTV pluzz à une seule adresse IP:
+utilisée par FranceTV pluzz à une seule adresse IP :
 
 ~~~
 77.67.21.223    webservices.francetelevisions.fr
@@ -163,7 +163,7 @@ dans `/etc/openvpn/hma-up.sh`, et
 dans `/etc/openvpn/hma-down.sh`.
 
 Il faut également s'assurer que le service qui démarre transmission est désactivé.
-Toujours sur ubuntu:
+Toujours sur ubuntu :
 
 ~~~bash
 sudo update-rc.d transmission-daemon remove
