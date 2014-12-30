@@ -1,5 +1,6 @@
 ---
 title: Utiliser un VPN avec transmission, FranceTV Pluzz et Arte+7
+tags: code france
 ---
 
 De nombreux vendeurs de VPN fournissent des solutions efficaces contre la surveillance
