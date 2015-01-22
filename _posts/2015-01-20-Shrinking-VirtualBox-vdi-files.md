@@ -34,7 +34,7 @@ Performances were *very* bad on windows. Using
 
 helped a lot.
 
-Conclusion: I'll have to use reenable TRIM support and use [ForceTRIM]
+Conclusion: I'll have to reenable TRIM support and use [ForceTRIM]
 from time to time to keep the vdi file as small as possible.
 
 [ForceTRIM]: http://www.mediafire.com/download/1cd8dh0msw2jq1w/ForceTrim.zip
