@@ -26,5 +26,15 @@ with `fsutil behavior set DisableDeleteNotify 1`, but I don't know if that's rea
 worth it. I think I'll continue to use it with the TRIM enable and see how it
 works.
 
+_Update 2015-01-22_
+
+Performances were *very* bad on windows. Using
+
+    fsutil behavior set DisableDeleteNotify 1
+
+helped a lot.
+
+Conclusion: I'll have to use reenable TRIM support and use [ForceTRIM]
+from time to time to keep the vdi file as small as possible.
 
 [ForceTRIM]: http://www.mediafire.com/download/1cd8dh0msw2jq1w/ForceTrim.zip
